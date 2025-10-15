@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+<style>
+    /* outer container box*/
+    .outer-box{
+        background-color: darkorchid;
+        border: 15px solid green;  /*large border*/
+        padding: 50px;      /*space for middle box*/
+        width: 300px;
+        margin: 20px auto;
+    }
+    /*middle border box*/
+    .middle-box{
+        border: 10px solid black;  /*medium border*/
+        padding: 25px;   /*space for inner box*/
+        background-color: blue;
+    }
+    /*inner box*/
+    .inner-box{
+        border: 6px solid lightgreen;  /*small border*/
+        padding: 10px;
+        background-color: orangered; 
+        text-align: center;
+    }
+ </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="middle-box">
+            <div class="inner-box">
+                <h2>Layered Box</h2>
+                <p>This css box model describes how every html element is displayed as a rectangular box on a webpage.</p>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>
