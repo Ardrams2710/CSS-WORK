@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>featured blog post</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .featured-blog{
+            display: flex;
+            background-color: blueviolet;
+            padding: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .blog-post{
+            width: 30%;
+            background-color: aqua;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0);
+        }
+        img[src$=".jpg"]{
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .blog-post h2{
+            color: crimson;
+        }
+       .blog-post a[href^="https"]{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media(max-width: 600px){
+            .featured-blog{
+                flex-direction: column;
+                align-items: center;
+            }
+        .blog-post{
+            width: 90%;
+            font-size: 14px;
+        }
+    }
+        @media(orientation: portrait) {
+            .featured-blog{
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="featured-blog">
+        <div class="blog-post">
+            <h3>Exploring the mountains</h3>
+            <img src="https://images.squarespace-cdn.com/content/v1/5e8ee22524984c387cdaed27/f4ec0ded-9ff4-406e-8dd1-5f0fe74e48bf/Denali%2C+Alaska.jpg" width="300" height="250">
+            <p>Discover the beauty of nature and adventure...</p>
+            <a href="https://images.squarespace-cdn.com/content/v1/5e8ee22524984c387cdaed27/f4ec0ded-9ff4-406e-8dd1-5f0fe74e48bf/Denali%2C+Alaska.jpg">Read more</a>
+         </div>
+         <div class="blog-post">
+            <h3>Delicious homemade recipes</h3>
+            <img src="https://www.seriouseats.com/thmb/wGuCjLHsy7Q-EFrdmgEzu2VD-S8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__06__20160603-tortilla-espanola-vicky-wasik-16-08693f341420437d9ed0229f2bcfa251.jpg" width="300" height="250">
+            <p>Try out simple and tasty dishes from home...</p>
+            <a href="https://www.seriouseats.com/thmb/wGuCjLHsy7Q-EFrdmgEzu2VD-S8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__06__20160603-tortilla-espanola-vicky-wasik-16-08693f341420437d9ed0229f2bcfa251.jpg">Read more</a>
+            </div>
+            <div class="blog-post">
+                <h3>City lights and nightlife</h3>
+                <img src="https://benjweinberg.com/wp-content/uploads/2018/03/04-cities-looking-to-harness-smart-technologies-should-start-small_960px-x-540px.jpg" width="300" height="250">
+                <p>Experience the vibrant energy of city life...</p>
+                <a href="https://benjweinberg.com/wp-content/uploads/2018/03/04-cities-looking-to-harness-smart-technologies-should-start-small_960px-x-540px.jpg">Read more</a>
+         </div>
+    </section>
+    </body>
+</html>

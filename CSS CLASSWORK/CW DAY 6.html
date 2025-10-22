@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product card</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aqua;
+        }
+        .product-card{
+            text-align: center;
+            background-color: crimson;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .product-image{
+            width: 100%;
+            border: 2px solid black;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .product-name{
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .buy-button{
+            background-color: blue;
+            color: chartreuse;
+            padding: 20px 15px;
+            border-radius: 8px;
+        }
+        @media only screen and (orientation: landscape) {
+  body{
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 600px) {
+    .product-card{
+        width: 200px;
+        text-align: center;
+    }
+}
+.product-name{
+    font-size: 1em;
+}
+  </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://www.milton.in/cdn/shop/files/breeze_750_blue.jpg?v=1736934801&width=1040" class="product-image">
+        <h2 class="product-name">WATER BOTTLE</h2>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    </body>
+</html>
